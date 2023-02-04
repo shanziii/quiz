@@ -4,8 +4,13 @@
     let password = ""; 
 
     function submit(password: string){
+        
+        if(password.length<8){
+            alert("NB: Password cannot be less than 8 characters!")
+        }else{
 
-     alert("Your password " + password + " is acceptible");
+            alert("Your password " + password + " is acceptible!");
+        }
 
     }
 
